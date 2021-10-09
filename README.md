@@ -1,6 +1,6 @@
 # Chat en Tiempo Real  
 
-## Instalaciones
+## Instalaciones Generales
 
 - Instalar TailwindCSS desde [aqui](https://tailwindcss.com/docs/guides/laravel)  
 
@@ -70,6 +70,19 @@ window.addEventListener('alert', event => {
 
 `npm run dev`
 
+- Instalar Pusher desde [aqui](https://www.pusher.com/) y crear cuenta gratuita
+
+```
+// Cambiar en .env
+
+BROADCAST_DRIVER=pusher
+
+PUSHER_APP_ID=tu_id
+PUSHER_APP_KEY=tu_key
+PUSHER_APP_SECRET=tu_secret
+PUSHER_APP_CLUSTER=tu_cluste
+```
+
 - Crear HomeController  
 
 `php artisan make:controller HomeController`  
@@ -84,9 +97,12 @@ class HomeController extends Controller
 }
 ```
 
-## Primeros pasos
-
-- Crear componente livewire para formulario  
+- Crear componentes livewire para formulario y chst  
 
 `php artisan make:livewire chat-form`  
+`php artisan make:livewire chat-list`  
+
+- Crear evento para mensajes  
+
+`php artisan make:event SendMessageEvent`
 

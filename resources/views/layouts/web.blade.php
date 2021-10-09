@@ -29,13 +29,6 @@
     <body class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans antialiased scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100">
         <div class="min-h-screen pt-16 flex flex-col justify-between">
             @include('layouts.nav')
-
-            <!-- Page Heading -->
-            <header class="bg-white dark:bg-gray-800 shadow" id="header">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    Chat With Livewire & Pusher
-                </div>
-            </header>
             
             <!-- Page Content -->
             <main class="max-w-7xl w-full mx-auto sm:px-6 lg:px-8 p-2 flex-1" id="main">
