@@ -21,6 +21,7 @@
 
         @stack('styles')
         @livewireStyles
+        @toastr_css
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -59,5 +60,7 @@
 
         @stack('scripts')
         @livewireScripts
+        @jquery
+        @toastr_js
     </body>
 </html>

@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-    <div class="block">
-        <h1>Home Page</h1>
-    </div>
+<div class="">
+    @livewire('chat-form', [], key('chat-form'))
+</div>
 @endsection
